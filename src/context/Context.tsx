@@ -1,7 +1,5 @@
-import React from "react";
+import { createContext } from "react";
 
-const Context = () => {
-  return <div>Context</div>;
-};
+const AppCtx = createContext(null);
 
-export default Context;
+export default AppCtx;
