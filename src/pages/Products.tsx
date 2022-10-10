@@ -2,7 +2,9 @@ import { FC, useState } from "react";
 import { products } from "./Mainproducts";
 
 const Products: FC = () => {
-  const [change, setChange] = useState<number>(0);
+  const [shirt, setShirt] = useState<number>(0);
+  // const [pants, setPants] = useState<number>(0);
+  // const [socks, setSocks] = useState<number>(0);
 
   return (
     <div>
@@ -17,7 +19,7 @@ const Products: FC = () => {
                 className="bg-[#E7DBDB] w-[250px] h-[200px] flex justify-center 
             items-center rounded-md"
               >
-                <img src={i.img[change]} alt={i.name} className="w-[230px]" />
+                <img src={i.img[shirt]} alt={i.name} className="w-[230px]" />
               </div>
 
               <div className="flex justify-between w-[240px] mt-2">
@@ -26,9 +28,9 @@ const Products: FC = () => {
               </div>
 
               <div className="flex gap-7">
-                <button onClick={() => setChange(0)}>black</button>
-                <button onClick={() => setChange(1)}>shriBlue</button>
-                <button onClick={() => setChange(2)}>Blue</button>
+                <button onClick={() => setShirt(0)}>black</button>
+                <button onClick={() => setShirt(1)}>shriBlue</button>
+                <button onClick={() => setShirt(2)}>Blue</button>
               </div>
 
               <button>Add to cart</button>
