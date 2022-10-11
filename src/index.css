@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300&display=swap");
 
 body {
-  margin: 0;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(56, 55, 55);
+  background-color: rgb(255, 255, 255);
 }
 
 @tailwind base;
